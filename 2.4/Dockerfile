@@ -55,7 +55,7 @@ RUN mkdir -p /opt/app-root/etc/httpd.d && \
 VOLUME ["/opt/rh/httpd24/root/var/www"]
 VOLUME ["/var/log/httpd24"]
 
-# USER 1001
+USER 1001
 
 ENTRYPOINT ["/usr/local/bin/run-httpd24.sh"]
 CMD ["httpd", "-DFOREGROUND"]
